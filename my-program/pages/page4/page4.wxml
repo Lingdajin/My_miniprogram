@@ -1,0 +1,40 @@
+<!--pages/page4/page4.wxml-->
+<view wx:if="{{dragon>1&&me>1}}">
+<image src="https://ts1.cn.mm.bing.net/th/id/R-C.2b287fee67fdf73cd0e8396ec5e3d991?rik=u6r6vzQvoSfW4g&riu=http%3a%2f%2fp1.qhmsg.com%2ft01ea7470af82d09981.gif&ehk=X%2bWMN%2fapIhYTE7t%2bYHZaTwyUUFLSWn7PMfdxQTjFBUY%3d&risl=&pid=ImgRaw&r=0" class="background"></image>
+<view>回合：{{h}}</view>
+<progress percent="{{dragon}}" show-info stroke-width="50" color="rgb(200, 0, 255)"></progress>
+<block wx:if="{{a}}">
+  <button size="mini" type="warn" plain="true" bindtap="meAttack">攻击</button>
+  <button size="mini" type="primary" plain="true" bindtap="rise">火焰附魔</button>
+  <button size="mini" type="primary" plain="true" bindtap="hold">奶一下自己</button>
+</block>
+<block wx:if="{{c}}">
+  <view>你对恶龙造成了{{k}}点伤害</view>
+  <view>恶龙发动攻击，对你造成了{{s}}点伤害</view>
+  <button bindtap="continue">确定</button>
+</block>
+<block wx:if="{{b}}">
+  <view>你使用了火焰附魔到你的武器上</view>
+  <view>恶龙发动攻击，对你造成了{{s}}点伤害</view>
+  <button bindtap="continue">确定</button>
+</block>
+<block wx:if="{{d}}">
+  <view>你给自己奶了20滴血</view>
+  <view>恶龙发动攻击，对你造成了{{s}}点伤害</view>
+  <button bindtap="continue">确定</button>
+</block>
+<progress percent="{{me}}" show-info></progress>
+</view>
+<view wx:if="{{dragon<1}}">
+  <image class="background" src="https://s2.loli.net/2022/10/02/o1eaDf9N3vGmWjk.gif" mode="aspectFill"></image>
+  <view class="tex"></view>
+  <view class="tex1">你赢了！</view>
+</view>
+<view wx:if="{{me<1}}">
+  <image class="background" src="https://pic.vjshi.com/2019-07-01/90947b22e31a5ecb514915146a34599a/00001.jpg?x-oss-process=style/watermark" mode="aspectFill"></image>
+  <view class="tex"></view>
+  <view class="tex1">你输了！</view>
+  <button type="primary" >
+    <navigator url="/pages/page1/page1" hover-class="navigator-hover">老子要重来！</navigator>
+  </button>
+</view>

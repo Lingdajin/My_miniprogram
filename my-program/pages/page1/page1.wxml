@@ -1,0 +1,35 @@
+<!--pages/page1.wxml-->
+欢迎你！
+<button type="primary" bindtap="xChange">你好</button>
+<block wx:if="{{x}}" >
+请问尊姓大名？
+  <button type="primary" bindtap="getUserProfile">我叫...{{userInfo.nickName}}</button>
+  <block wx:if="{{y}}">
+    哦，你好哇！勇者{{userInfo.nickName}}
+    <button type="primary" bindtap="zChange">咦？！</button>
+    <block wx:if="{{z}}">
+      简单来说吧，这个世界正饱受一头恶龙的侵袭。年轻的勇者啊，希望你杀掉那头龙，还我们世界一个安宁吧。
+      <button type="primary" bindtap="aChange">哦哦，原来是异世界穿越啊（喜</button>
+      <block wx:if="{{a}}">
+        现在挑一件武器吧awa
+        <image mode="aspectFit" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.EuOMlH3LjZTH37dlYEiQwAHaHa?pid=ImgDet&rs=1" bindtap="bChange"></image>
+        <image mode="aspectFit" src="https://ts1.cn.mm.bing.net/th/id/R-C.d73fed262ea0c420e1bc3dd4f0337cc6?rik=1Kn%2fJuuK8lJO%2fg&riu=http%3a%2f%2fi3.qhimg.com%2fdmsmty%2f1024_576_%2ft010b4f6d468f292041.jpg&ehk=A0WioXb2BxpR%2fn6CYL1RODSBJ1IsHcEp5NGNxQ1DB5g%3d&risl=&pid=ImgRaw&r=0" bindtap="cChange"></image>
+        <block wx:if="{{b}}">
+        <view>你获得了 钻石剑*1</view>
+          <button type="primary" >
+            <navigator url="/pages/page2/page2" hover-class="navigator-hover">出发！</navigator>
+            </button>
+        </block>
+        <block wx:if="{{c}}">
+          <view>你获得了 精灵球*1</view>
+        <button type="primary" >
+          <navigator url="/pages/page3/page3" hover-class="navigator-hover">出发！</navigator>
+        </button>
+        </block>
+
+      </block>
+    </block>
+  </block>
+</block>
+
+

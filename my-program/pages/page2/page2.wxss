@@ -1,0 +1,31 @@
+/* pages/page2/page2.wxss */
+.background {
+  width: 100%;
+  height: 50%;
+  position: fixed;
+  background-size:100% 100%;
+  z-index: -1;}
+  .mini-btn{
+    margin-left: 200rpx;
+  }
+  .mini-btn2{
+    margin-left:100rpx;
+  }
+  .tex{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tex1{
+    margin-top: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tex2{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

@@ -1,0 +1,26 @@
+<!--pages/page2/page2.wxml-->
+<image class="background" wx:if="{{d}}" src="https://s2.loli.net/2022/10/02/ktQ6xilhHX3opjr.png" mode="aspectFill"></image>
+<image class="background" wx:if="{{e}}" src="https://pic.vjshi.com/2019-07-01/90947b22e31a5ecb514915146a34599a/00001.jpg?x-oss-process=style/watermark" mode="aspectFill"></image>
+<view class="tex"></view>
+
+<block wx:if="{{a}}">
+  <view class="tex1">该怎么办？</view>
+  <button class="mini-btn" type="primary" size="mini" plain="true" bindtap="aChange">劈他</button>
+  <button class="mini-btn2" size="mini" type="warn" plain="true" bindtap="bChange">快跑</button>
+</block>
+<block wx:if="{{c}}">
+  <view class="tex1">钻石大宝剑一击劈死了二楞黄巾军</view>
+  <view class="tex">干得好！</view>
+  <button type="primary" >
+      <navigator url="/pages/page4/page4" hover-class="navigator-hover">继续！</navigator>
+  </button>
+</block>
+<block wx:if="{{b}}">
+  <view class="tex1">你转身就跑。</view>
+  <view class="tex">黄巾军一刀把你这个废柴砍翻</view>
+  <view class="tex2">GAME OVER</view>
+  <button type="primary" >
+    <navigator url="/pages/page1/page1" hover-class="navigator-hover">老子要重来！</navigator>
+  </button>
+</block>
+

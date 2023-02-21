@@ -1,0 +1,39 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.tex{
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:rgb(255, 0, 0)
+}
+.tex1{
+  margin: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.background {
+  width: 100%;
+  height: 50%;
+  position: fixed;
+  background-size:100% 100%;
+  z-index: -1;}

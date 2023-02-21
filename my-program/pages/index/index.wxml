@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="main">
+  <image class="background" src="https://s2.loli.net/2022/10/01/T3ySA7UoxLBwt1n.gif" > mode="aspectFill"></image>
+  <view class="tex">不用下载，点击就玩!</view>
+  <view class="tex1"></view>
+  <button type='primary' >
+    <navigator url="/pages/page1/page1" hover-class="navigator-hover">点击开始</navigator>
+  </button>
+  <audio src="http://dl.stream.qqmusic.qq.com/C400003jdtf04ZUEeu.m4a?guid=3138937306&amp;vkey=31C47F1D61C02A77375877D9D86D532CF75FB13FCFA38E9CFCCB67975767E58C53DB520AB97197ACE2CE58F357A49D02AAADDAEDC830D585&amp;uin=&amp;fromtag=120032" id="myAudio" name="劲爆音乐！" author="萨日朗" controls loop></audio>
+
+  <button type="primary" bindtap="audioPlay">播放</button>
+  <button type="primary" bindtap="audioPause">暂停</button>
+</view>
+
+
